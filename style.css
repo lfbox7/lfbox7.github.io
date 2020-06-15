@@ -9,13 +9,6 @@ html {
     box-sizing: inherit;
 }
 
-body {
-    background: #32373d;
-    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
-    color: #ffffff; 
-    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-}
-
 a,
 a:focus,
 a:hover {
@@ -44,7 +37,6 @@ a[data-toggle="collapse"] {
 html,body,h1,h2,h3,h4,h5,h6 {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    margin: 10px 0;
 }
 
 h1 { 
@@ -74,7 +66,7 @@ h6 {
 
 .h1, .h2, .h3, .h4, .h5 {
     color: #ffffff;
-    font-family: "Poppins", Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     line-height: 1.5;
 }
@@ -96,16 +88,16 @@ button:focus, button:hover {
 .btn.btn-primary,
 .btn.btn-primary:focus, 
 .btn.btn-primary:hover {
-    background: #717c8a !important;
-    border-color: #717c8a !important; 
+    background: #332e70 !important;
+    border-color: #332e70 !important; 
 }
 
 .btn-secondary,
 .btn-secondary:focus,
 .btn-secondary:hover {
-    background-color: #ffffff;
+    background-color: #702e3d;
     border: thin solid #ffffff;
-    color: #32373d;
+    color: #ffffff;
     text-shadow: none;
 }
 
@@ -113,7 +105,7 @@ button:focus, button:hover {
 /* Sidebar */
 
 #sidebar {
-    background: #32373d;
+    background: #702e3d;
     color: #ffffff;
     max-width: 19em;
     min-width: 19em;
@@ -130,12 +122,11 @@ button:focus, button:hover {
 }
 
 #sidebar h1 .logo {
-    background: #2f89fc;
+    background: #332e70;
     color: #ffffff;
     display: block;
     padding: .75em 2em;
 }
-
 
 #sidebar .h6 {
     color: #ffffff;
@@ -152,7 +143,7 @@ button:focus, button:hover {
 }
 
 #sidebar .custom-menu .btn.btn-primary {
-    background: #717c8a;
+    background: #84888b;
     border-color: transparent;
     color: #ffffff;
     height: 2.125em;
@@ -160,21 +151,18 @@ button:focus, button:hover {
     width: 2.125em;
 }
 
-#sidebar .custom-menu .btn.btn-primary:after, #sidebar .custom-menu .btn.btn-primary:before {
+#sidebar .custom-menu .btn.btn-primary::after, #sidebar .custom-menu .btn.btn-primary::before {
     bottom: 0;
     color: #ffffff;
+    /*
     font-family: "Font Awesome 5 Free";
-    content: "\f105";
+    font-weight: 900;
+    content: "\f054";
+    */
     left: 0;
     position: absolute;
     right: 0;
     top: .125em;
-}
-
-#sidebar .custom-menu .btn.btn-primary:after {
-    font-family: "Font Awesome 5 Free";
-    content: "\f105";
-    right: .125em; 
 }
 
 #sidebar ul.components {
@@ -214,7 +202,7 @@ button:focus, button:hover {
     border-radius: 50%;
     bottom: 0;
     content: '';
-    font-family: "Poppins", Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: .5em;
     height: .75em;
     position: absolute;
@@ -225,8 +213,14 @@ button:focus, button:hover {
 
 #sidebar ul li a:hover {
     color: #ffffff;
-    background: #717c8a;
-    border-bottom: 1px solid #717c8a; }
+    background: #84888b;
+    border-bottom: 1px solid #84888b; }
+
+#sidebar ul li > a:hover::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f054";
+}
 
 #sidebar ul li.active > a {
     background: transparent;
@@ -234,12 +228,14 @@ button:focus, button:hover {
 }
 
 #sidebar ul li.active > a:hover {
-    background: #717c8a;
-    border-bottom: 1px solid #717c8a; 
+    background: #84888b;
+    border-bottom: 1px solid #84888b; 
 }
 
 #sidebar ul li.active > a:hover::after {
-    content: " >";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f054";
 }
 
 #sidebar.active {
@@ -248,13 +244,6 @@ button:focus, button:hover {
 
 #sidebar.active .custom-menu {
     margin-right: -3.125em;
-}
-
-#sidebar.active .btn.btn-primary:before {
-    
-    font-family: "Font Awesome 5 Free";
-    content: "\f105";
-    left: .25em !important;
 }
 
 #sidebar.active .btn.btn-primary:after {
@@ -278,6 +267,10 @@ button:focus, button:hover {
     #sidebarCollapse span {
         display: none; 
     } 
+}
+
+#sidebar .get-int-touch {
+    display: block;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -311,6 +304,7 @@ button:focus, button:hover {
 }
 
 .bg-wrap .user-logo .img {
+    background-image: url("./assets/images/me.jpg");
     border-radius: 50%;
     height: 6.25em;
     margin: 0 auto;
@@ -319,28 +313,19 @@ button:focus, button:hover {
 }
 
 .img {
+    background-image: url("./assets/images/wagonInBlueBonnets.jpeg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     border: thin solid #ffffff;
 }
 
-.sd-bg-img {
-    background-image: url('./assets/images/wagonInBlueBonnets.jpeg');
-}
-
-.sb-logo-img {
-    background-image: url('./assets/images/me.jpg')
-}
-
 .bg-wrap .user-logo h3 {
-    color: #ffffff;
     font-size: 1.125em;
     font-weight: bolder;
 }
 
 .bg-wrap .user-logo h4 {
-    color: #ffffff;
     font-size: 1em; 
     font-weight: lighter;
 }
@@ -357,6 +342,20 @@ button:focus, button:hover {
 
 /* Content */
 
+#content {
+    background-attachment: fixed;
+    background-image: url('./assets/images/blueBonnetsAlongTheLake.jpeg');
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: auto;
+    min-height: 100vh;
+    padding: 0;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; 
+    width: 100%;
+}
+
 .cover {
     padding: 0 1.5rem;
 }
@@ -371,9 +370,15 @@ button:focus, button:hover {
     background-position: center; 
     background-repeat: no-repeat;
     background-size: auto;
-    max-height: 100vw;
+    max-height: 100vh;
     max-width: 100vw;
 }
+
+.inner {
+    margin-top: 5em;
+    width: 45vw;
+}
+
 
 /* Footer */
 
@@ -392,9 +397,7 @@ hr {
 
 .card {
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-    border-radius: 1em;
-    margin: .5em;
-    padding: 1em;
+    border-radius: 2em !important;
 }
 
 .card:hover {
@@ -402,8 +405,10 @@ hr {
 }
 
 .card-img-top {
-    border-radius: .75em;
-    margin-top: 1em; 
+    border-radius: 2em !important;
+    margin-top: 1em;
+    min-height:  12em;
+    padding: 0;
 }
 
 .round-small {
@@ -629,4 +634,226 @@ hr {
 
 .border-gothic,.hover-border-gothic:hover {
     border-color: #668586 !important;
+}
+
+
+/* Portfolio Page */
+
+#big-card-1 {
+    opacity: 0;
+    width: 0;
+}
+
+#big-card-2 {
+    opacity:  0;
+    width: 0;
+}
+
+.card-1 {
+    background-image: url("./assets/images/pricing.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 0 !important;
+    min-height: 20vh;
+}
+
+.card-2 {
+    background-image: url("./assets/images/blog.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 0 !important;
+    min-height: 20vh;
+}
+
+.card-3 {
+    background-image: url("./assets/images/edusite.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 0 !important;
+    min-height: 20vh;
+}
+
+.card-4 {
+    background-image: url("./assets/images/mentor.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 0 !important;
+    min-height: 20vh;
+}
+
+.big-card {
+    transition: .5s ease;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1001;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.overlay .card {
+    
+}
+
+.overlay .card .carousel img {
+    border-radius:  2em;
+    height: 50vh;
+}
+
+
+
+
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+/* Header */
+
+header {
+    height: 10vh;
+}
+
+.content {
+      width: 94%;
+      margin: 4em auto;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: justify;
+}
+
+.logo {
+      line-height: 60px;
+      position: fixed;
+      float: left;
+      margin: 16px 46px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      letter-spacing: 2px;
+}
+
+nav {
+      position: fixed;
+      width: 100%;
+      line-height: 60px;
+    z-index: 1000;
+}
+
+nav ul {
+      line-height: 60px;
+      list-style: none;
+      background: rgba(0, 0, 0, 0);
+      overflow: hidden;
+      color: #fff;
+      padding: 0;
+      text-align: right;
+      margin: 0;
+      padding-right: 40px;
+      transition: 1s;
+}
+
+nav.black ul {
+      background: #000;
+}
+
+nav ul li {
+      display: inline-block;
+      padding: 16px 40px;;
+}
+
+nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+}
+
+.menu-icon {
+      line-height: 60px;
+      width: 100%;
+      background: #000;
+      text-align: right;
+      box-sizing: border-box;
+      padding: 15px 24px;
+      cursor: pointer;
+      color: #fff;
+      display: none;
+}
+
+@media(max-width: 786px) {
+
+      .logo {
+            position: fixed;
+            top: 0;
+            margin-top: 16px;
+      }
+
+      nav ul {
+            max-height: 0px;
+            background: #000;
+      }
+
+      nav.black ul {
+            background: #000;
+      }
+
+      .showing {
+            max-height: 34em;
+      }
+
+      nav ul li {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 24px;
+            text-align: center;
+      }
+
+      .menu-icon {
+            display: block;
+      }
+
 }

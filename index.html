@@ -1,91 +1,95 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>Leonard Box</title>
-        
-        <link rel="stylesheet" href="./assets/css/all.css">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css" >
-    </head>
-    
-    <body>
-        <div class="wrapper d-flex align-items-stretch">
-            <nav id="sidebar">
-                <div class="custom-menu">
-                    <button type="button" id="sidebarCollapse" class="btn btn-primary"></button>
-                </div>
-                
-                <div class="img bg-wrap text-center py-4 sd-bg-img">
-                    <div class="user-logo">
-                        <div class="img sb-logo-img"></div>
-                        <h3>Leonard Box</h3>
-                        <h4>Web Developer</h4>
-                    </div>
-                </div>
-                
-                <ul class="list-unstyled components mb-5">
-                    <li class="active">
-                        <a href="#"><span class="fa fa-home mr-3"></span> Home</a>
-                    </li>
-                    <li><a href=""></a></li>
-                    <li>
-                        <a href="#"><span class="fa fa-images mr-3"></span> Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#"><span class="fa fa-briefcase mr-3"></span> My Offer</a>
-                    </li>
-                    <li>
-                        <a href="#"><span class="fa fa-id-card mr-3"></span> Contact Me</a>
-                    </li>
-                    <li><a href=""></a></li>
-                    <li>
-                        <a href="#"><span class="fa fa-file mr-3"></span>My CV</a>
-                    </li>
-                    <li>
-                        <a href="#"><span class="fa fa-blog mr-3"></span>My Personal Blog</a>
-                    </li>
-                    <li><a href=""></a></li>
-                    <li class="text-center">GET IN TOUCH</li>
-                    <li class="text-center">
-                        <span class="text-center">
-                            <a class="social-icons" href="#"><i class="fa fa-envelope"></i></a>
-                            <a class="social-icons" href="#"><i class="fab fa-linkedin"></i></a>
-                            <a class="social-icons" href="#"><i class="fab fa-github"></i></a>
-                            <a class="social-icons" href="#"><i class="fab fa-facebook"></i></a>
-                            <a class="social-icons" href="#"><i class="fab fa-twitter"></i></a>
-                        </span>
-                    </li>
-                </ul>
-            </nav>
-            
-            <!-- Page Content  -->
-            <div id="content" class="p-4 p-md-5 pt-5 cover-container d-flex w-100 h-100 p-3 mx-auto flex-column text-center">
-                <main role="main" class="inner cover">
-                    <h1 class="cover-heading">Cover your page.</h1>
-                    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-                    <p class="lead">
-                        <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-                    </p>
-                </main>
-            </div>
+<head>
+  <title>Leonard Box</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="My personal Website.">
+  <meta name="author" content="Leonard Box">
+  <meta name="keywords" content="">
+  <link rel="stylesheet" href="./assets/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="./assets/js/main.js"></script>
+</head>
+
+<body class="aluminum">
+  <div class="wrapper d-flex align-items-stretch">
+    <!-- Sidebar -->
+    <nav id="sidebar">
+      <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+      </div>
+      <div class="img bg-wrap text-center py-4">
+        <div class="user-logo">
+          <div class="img"></div>
+          <h3 class="text-white">Leonard Box</h3>
+          <h4 class="text-white">Software Engineer</h4>
         </div>
-        <!-- Footer -->
-        <footer class="container-fluid madla center margin-top">
-            <p>Find me on social media:</p>
-            <a class="text-white" href="https://facebook.com" target="_blank"><i class="fab fa-facebook hover-opacity"></i></a>
-            <a class="text-white" href="https://instagram.com" target="_blank"><i class="fab fa-instagram hover-opacity"></i></a>
-            <a class="text-white" href="https://twitter.com" target="_blank"><i class="fab fa-twitter hover-opacity"></i></a>
-            <a class="text-white" href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin hover-opacity"></i></a>
-            <p><i class="fa fa-copyright text-white"></i> 2020, Leonard Box</p>
-        </footer>
-        
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
-  </body>
+      </div>
+      <ul class="list-unstyled components mb-5">
+        <li class="active">
+          <a href="index.html"><span class="fa fa-home mr-3"></span> Home</a>
+        </li>
+        <li>
+          <a href="portfolio.html"><span class="fa fa-folder-open mr-3"></span> Portfolio</a>
+        </li>
+        <li>
+          <a href="#"><span class="fa fas fa-newspaper mr-3"></span> My Offer</a>
+        </li>
+        <li>
+          <a href="resume.html"><span class="fa fa-file mr-3"></span> My Résumé</a>
+        </li>
+        <li>
+          <a href="#"><span class="fa fa-blog mr-3"></span> My Blog</a>
+        </li>
+        <li>
+          <a href="#"><span class="fa fa-id-card mr-3"></span> Contact Me</a>
+        </li>
+      </ul>
+      <div class="get-in-touch">
+        <p class="ml-4">GET IN TOUCH</p>
+        <span class="ml-4 mt-1">
+          <a href="mailto: lbox01@jaguar.tamu.edu"><i class="fa fa-envelope hover-opacity fa-lg mr-1"></i></a>
+          <a href="https://www.linkedin.com/in/leonard-box/" target="_blank"><i
+              class="fab fa-linkedin fa-lg mr-1"></i></a>
+          <a href="https://github.com/lfbox7/" target="_blank"><i class="fab fa-github hover-opacity fa-lg mr-1"></i></a>
+          <a href="https:facebook.com" target="_blank"><i class="fab fa-facebook hover-opacity fa-lg mr-1"></i></a>
+          <a href="https:twitter.com" target="_blank"><i class="fab fa-twitter hover-opacity fa-lg mr-1"></i></a>
+        </span>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div id="content" class="p-4 p-md-5 pt-5">
+      <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <main role="main" class="inner cover">
+          <h1 class="text-koamaru ml-auto"><b>Hi, I'm Leo,</b></h1>
+          <h2 class="text-koamaru ml-auto"><b>a Computer Science student at Texas A&M University - San Antonio. I
+              specialize in full-stack
+              Web development.</b></h2>
+          <p class="ml-auto">
+            <a href="#" class="btn btn-lg btn-secondary mt-5">My Offer</a>
+          </p>
+          <p class="ml-auto">
+            <a href="portfolio.html" class="btn btn-lg btn-secondary mt-3">My Portfolio</a>
+          </p>
+        </main>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
