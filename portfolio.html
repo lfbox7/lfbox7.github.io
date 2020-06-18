@@ -2,18 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="My personal Website.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My personal projects.">
     <meta name="author" content="Leonard Box">
     <meta name="keywords" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="portfolio.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -23,102 +22,56 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-    <script src="./assets/js/modal.js"></script>
     <script src="./assets/js/main.js"></script>
 </head>
 
 <body class="aluminum">
-
-    <div class="modal-wrap">
-        <div class="mask"></div>
-        <div id="modal" class="modal">
-            <div class="carousel-wrap">
-                <div class="window">
-                    <div id="carousel">
-                        <div class="slide"></div>
-                    </div>
-                    <i id="prev" class="mdi fa fa-chevron-left"></i>
-                    <i id="next" class="mdi fa fa-chevron-left"></i>
-                </div>
-            </div>
-            <div class="info-box">
-                <div class="title"></div>
-                <div class="tag"></div>
-                <div class="detail"></div>
-                <a href="" target="_blank"></a>
-            </div>
-            <i class="close mdi fa fa-times"></i>
-        </div>
-    </div>
-
-
-
     <!-- Header -->
-    <div class="container-fluid">
-        <header>
-            <nav>
-                <div class="menu-icon">
-                    <i class="fa fa-bars fa-2x"></i>
-                </div>
-                <div class="logo">
-                    LOGO
-                </div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="#">My Offer</a></li>
-                        <li><a href="resume.html">My Résumé</a></li>
-                        <li><a href="#">My Blog</a></li>
-                        <li><a href="#">Contact Me</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-    </div>
+    <header>
+        <nav>
+            <div class="menu-icon">
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+            <div class="logo">
+                LOGO
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="#">My Offer</a></li>
+                    <li><a href="resume.html">My Rèsumè</a></li>
+                    <li><a href="#">My Blog</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-    <!-- Page Content -->
-    <div class="container mt-5 text-center text-madla">
-        <h1 class="header text-white">PROJECTS</h1>
-    </div>
-
-    <div id="gallery" class="container flex row wrap mt-5 text-center" style="height: 73vh;">
-
-        <div class="mix bootstrap" data-my-order="1" style="display: inline-block;" data-bound="">
-            <div>
-                <div class="card card-img" style="background-image: url(./assets/images/edusite.png);"></div>
-                <div class="text">
-                    <div class="bold text-black">Edusite</div>
-                    <span class="highlight text-madla">JQuery / Bootstrap 4</span>
-                </div>
-                <div id="ordering" class="button">LEARN MORE</div>
+    <div class="container mt-5">
+        <div class="row ">
+            <div class="col-12">
+                <h1 class="text-center text-white"><b>Projects</b></h1>
             </div>
         </div>
+    </div>
 
-        <div class="mix bootstrap" data-my-order="1" style="display: inline-block;" data-bound="">
-            <div>
-                <div class="card card-img" style="background-image: url(./assets/images/edusite.png);"></div>
-                <div class="text">
-                    <div class="bold">Discover</div>
-                    <span class="highlight">JQuery / Bootstrap 4</span>
-                </div>
-                <div id="discover" class="button">LEARN MORE</div>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="card col-4 no-gutters" style="border-radius: none !important;">
+                <img src="./assets/images/mentor.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <!--<h5 class="card-title">Card title</h5>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+               --> </div>
             </div>
-        </div>
-
-        <div class="mix bootstrap" data-my-order="1" style="display: inline-block;" data-bound="">
-            <div>
-                <div class="card card-img" style="background-image: url(./assets/images/edusite.png);"></div>
-                <div class="text">
-                    <div class="bold">New Relic</div>
-                    <span class="highlight">JQuery / Bootstrap 4</span>
-                </div>
-                <div id="newrelic" class="button">LEARN MORE</div>
-            </div>
+            <div class="card col-4 no-gutters"></div>
+            <div class="card col-4 no-gutters"></div>
         </div>
 
     </div>
-    </div>
+
+
 
     <!-- Footer -->
     <footer class="container-fluid madla center margin-top">
@@ -133,9 +86,6 @@
                 class="fab fa-linkedin hover-opacity"></i></a>
         <p><i class="fa fa-copyright text-white"></i> 2020, Leonard Box</p>
     </footer>
-
-
-
 </body>
 
 </html>

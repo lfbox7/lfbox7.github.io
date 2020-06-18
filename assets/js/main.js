@@ -36,11 +36,11 @@
     
     $(window).on("scroll", function() {
         if($(window).scrollTop()) {
-              $('nav').addClass('black');
+              $('nav').addClass('koamaru');
         }
     
         else {
-              $('nav').removeClass('black');
+              $('nav').removeClass('koamaru');
         }
     })  
 
