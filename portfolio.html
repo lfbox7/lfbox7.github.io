@@ -11,6 +11,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="./assets/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portfolio.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -22,10 +23,36 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    <script src="./assets/js/modal.js"></script>
     <script src="./assets/js/main.js"></script>
 </head>
 
 <body class="aluminum">
+
+    <div class="modal-wrap">
+        <div class="mask"></div>
+        <div id="modal" class="modal">
+            <div class="carousel-wrap">
+                <div class="window">
+                    <div id="carousel">
+                        <div class="slide"></div>
+                    </div>
+                    <i id="prev" class="mdi fa fa-chevron-left"></i>
+                    <i id="next" class="mdi fa fa-chevron-left"></i>
+                </div>
+            </div>
+            <div class="info-box">
+                <div class="title"></div>
+                <div class="tag"></div>
+                <div class="detail"></div>
+                <a href="" target="_blank"></a>
+            </div>
+            <i class="close mdi fa fa-times"></i>
+        </div>
+    </div>
+
+
+
     <!-- Header -->
     <div class="container-fluid">
         <header>
@@ -50,180 +77,47 @@
         </header>
     </div>
 
-    <div class="container-fluid mt-3">
-        <div class="row">
-            <div class="card col-md-2 offset-2 card-1" onclick="openCard1()">
-                <div class="overlay" id="big-card-1">
-                    <div class="row">
-                        <div class="card col-6 offset-3 mt-5">
-                            <div class="row">
-                                <div class="col-10 offset-1">
+    <!-- Page Content -->
+    <div class="container mt-5 text-center text-madla">
+        <h1 class="header text-white">PROJECTS</h1>
+    </div>
 
-                                    <div id="carousel" class="carousel slide mt-5" data-ride="carousel">
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="./assets/images/blueBonnetValley.jpeg" class="d-block w-100"
-                                                    alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="./assets/images/wagonInBlueBonnets.jpeg"
-                                                    class="d-block  w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="./assets/images/blueBonnetsAlongTheLake.jpeg"
-                                                    class="d-block  w-100" alt="...">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <h1 class="card-title">Card 1</h1>
-                                <p class="card-text">Tag Line</p>
-                                <p class="card-text"><b>Project BLUF Statement</b></p>
-                                <p class="card-text">Description of the project</p>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Repellendus pariatur
-                                    provident soluta voluptatibus quis, dolores harum perspiciatis consequatur
-                                    praesentium totam
-                                    possimus obcaecati nisi voluptate! Reprehenderit, adipisci temporibus nisi quam nam
-                                    placeat
-                                    tempore ullam dolorem. Laboriosam.</p>
-                                <p class="card-text">
-                                <ul class="card-text">
-                                    <li class="card text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        Quam, nulla
-                                        aspernatur veniam?</li>
-                                    <li class="card text">Distinctio laboriosam deleniti vero esse tempore iusto ut non
-                                        alias, velit
-                                        placeat.</li>
-                                    <li class="card text">Accusamus maxime doloremque tenetur necessitatibus provident
-                                        nihil quis
-                                        maiores nisi soluta error!</li>
-                                    <li class="card text">Ipsam voluptatem, laudantium dolorum nihil magnam. Molestias
-                                        consequuntur
-                                        sint officiis sunt debitis.</li>
-                                    <li class="card text">Itaque dolor, nostrum sit vero repellendus numquam dignissimos
-                                        nobis nemo
-                                        labore, pariatur.</li>
-                                    <li class="card text">Est maxime ab sed quasi quaerat tempore provident error quidem
-                                        labore
-                                        voluptatum.</li>
-                                    <li class="card text">Deleniti maxime excepturi ex pariatur quidem dolorem, totam ut
-                                        distinctio,
-                                        ipsum molestias!</li>
-                                    <li class="card text">Nesciunt illo vel molestias, quo iure numquam temporibus neque
-                                        modi
-                                        inventore quae?</li>
-                                </ul>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-1 offset-2">
-                            <a href="javascript:void(0)" class="closebtn" onclick="closeCard1()">&times;</a>
-                            <script>
-                                function openCard1() {
-                                    document.getElementById("big-card-1").style.opacity = "1";
-                                    document.getElementById("big-card-1").style.width = "100%";
-                                }
-                                function closeCard1() {
-                                    document.getElementById("big-card-1").style.opacity = "0";
-                                    document.getElementById("big-card-1").style.width = "0%";
-                                }
-                            </script>
-                        </div>
-                    </div>
+    <div id="gallery" class="container flex row wrap mt-5 text-center" style="height: 73vh;">
+
+        <div class="mix bootstrap" data-my-order="1" style="display: inline-block;" data-bound="">
+            <div>
+                <div class="card card-img" style="background-image: url(./assets/images/edusite.png);"></div>
+                <div class="text">
+                    <div class="bold text-black">Edusite</div>
+                    <span class="highlight text-madla">JQuery / Bootstrap 4</span>
                 </div>
+                <div id="ordering" class="button">LEARN MORE</div>
             </div>
-
-            <div class="card col-md-2 card-2" onclick="openCard2()">
-                <div class="overlay container-fluid big-card" id="big-card-2">
-                    <div class="row">
-                        <div class="card col-6 offset-3 mt-5">
-                            <div class="row">
-                                <div class="col-10 offset-1">
-
-                                    <div id="carousel" class="carousel slide mt-5" data-ride="carousel">
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="./assets/images/blueBonnetValley.jpeg" class="d-block w-100"
-                                                    alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="./assets/images/wagonInBlueBonnets.jpeg"
-                                                    class="d-block  w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="./assets/images/blueBonnetsAlongTheLake.jpeg"
-                                                    class="d-block  w-100" alt="...">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <h1 class="card-title">Card 2</h1>
-                                <p class="card-text">Tag Line</p>
-                                <p class="card-text"><b>Project BLUF Statement</b></p>
-                                <p class="card-text">Description of the project</p>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Repellendus pariatur
-                                    provident soluta voluptatibus quis, dolores harum perspiciatis consequatur
-                                    praesentium totam
-                                    possimus obcaecati nisi voluptate! Reprehenderit, adipisci temporibus nisi quam nam
-                                    placeat
-                                    tempore ullam dolorem. Laboriosam.</p>
-                                <p class="card-text">
-                                <ul class="card-text">
-                                    <li class="card text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        Quam, nulla
-                                        aspernatur veniam?</li>
-                                    <li class="card text">Distinctio laboriosam deleniti vero esse tempore iusto ut non
-                                        alias, velit
-                                        placeat.</li>
-                                    <li class="card text">Accusamus maxime doloremque tenetur necessitatibus provident
-                                        nihil quis
-                                        maiores nisi soluta error!</li>
-                                    <li class="card text">Ipsam voluptatem, laudantium dolorum nihil magnam. Molestias
-                                        consequuntur
-                                        sint officiis sunt debitis.</li>
-                                    <li class="card text">Itaque dolor, nostrum sit vero repellendus numquam dignissimos
-                                        nobis nemo
-                                        labore, pariatur.</li>
-                                    <li class="card text">Est maxime ab sed quasi quaerat tempore provident error quidem
-                                        labore
-                                        voluptatum.</li>
-                                    <li class="card text">Deleniti maxime excepturi ex pariatur quidem dolorem, totam ut
-                                        distinctio,
-                                        ipsum molestias!</li>
-                                    <li class="card text">Nesciunt illo vel molestias, quo iure numquam temporibus neque
-                                        modi
-                                        inventore quae?</li>
-                                </ul>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-1 offset-2">
-                            <a href="javascript:void(0)" class="closebtn" onclick="closeCard2()">&times;</a>
-                            <script>
-                                function openCard2() {
-                                    document.getElementById("big-card-2").style.opacity = "1";
-                                    document.getElementById("big-card-2").style.width = "100%";
-                                }
-
-
-                                function closeCard2() {
-                                    document.getElementById("big-card-2").style.opacity = "0";
-                                    document.getElementById("big-card-2").style.width = "0";
-                                }
-                            </script>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card col-md-2 card-3" onclick="openCard3()"></div>
-            <div class="card col-md-2 card-4" onclick="openCard4()"></div>
         </div>
+
+        <div class="mix bootstrap" data-my-order="1" style="display: inline-block;" data-bound="">
+            <div>
+                <div class="card card-img" style="background-image: url(./assets/images/edusite.png);"></div>
+                <div class="text">
+                    <div class="bold">Discover</div>
+                    <span class="highlight">JQuery / Bootstrap 4</span>
+                </div>
+                <div id="discover" class="button">LEARN MORE</div>
+            </div>
+        </div>
+
+        <div class="mix bootstrap" data-my-order="1" style="display: inline-block;" data-bound="">
+            <div>
+                <div class="card card-img" style="background-image: url(./assets/images/edusite.png);"></div>
+                <div class="text">
+                    <div class="bold">New Relic</div>
+                    <span class="highlight">JQuery / Bootstrap 4</span>
+                </div>
+                <div id="newrelic" class="button">LEARN MORE</div>
+            </div>
+        </div>
+
+    </div>
     </div>
 
     <!-- Footer -->

@@ -639,54 +639,49 @@ hr {
 
 /* Portfolio Page */
 
-#big-card-1 {
-    opacity: 0;
-    width: 0;
+.mix {
+    position: relative;
 }
 
-#big-card-2 {
-    opacity:  0;
-    width: 0;
+.flex {
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
-.card-1 {
-    background-image: url("./assets/images/pricing.png");
+.flex.wrap {
+    flex-wrap: wrap;
+}
+
+.flex.row {
+    flex-direction: row;
+}
+
+.card-img {
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     border-radius: 0 !important;
-    min-height: 20vh;
+    min-height: 9vw !important;
+    min-width: 21vw !important;
 }
 
-.card-2 {
-    background-image: url("./assets/images/blog.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-radius: 0 !important;
-    min-height: 20vh;
+.card-img:hover + .text + .button {
+    visibility: visible;
 }
 
-.card-3 {
-    background-image: url("./assets/images/edusite.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-radius: 0 !important;
-    min-height: 20vh;
+.text {
+    background-color: #ffffff !important;
+    text-align: center;
+    visibility: hidden;
+    z-index: 1002;
 }
 
-.card-4 {
-    background-image: url("./assets/images/mentor.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-radius: 0 !important;
-    min-height: 20vh;
-}
-
-.big-card {
-    transition: .5s ease;
+.button {
+    background-color: #ffffff !important;
+    text-align: center;
+    visibility: hidden;
+    z-index: 1002;
 }
 
 .overlay {
@@ -759,11 +754,11 @@ header {
 }
 
 .content {
-      width: 94%;
-      margin: 4em auto;
-      font-size: 20px;
-      line-height: 30px;
-      text-align: justify;
+    width: 94%;
+    margin: 4em auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
 }
 
 .logo {
