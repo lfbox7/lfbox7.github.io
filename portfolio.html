@@ -26,6 +26,59 @@
 </head>
 
 <body class="aluminum">
+
+    <div class="modal-wrap flex visible">
+        <div class="mask"></div>
+        <div class="modal" id="modal" style="max-width: 700px;">
+          <div class="carousel-wrap" style="width: 700px;">
+            <div class="window">
+              <div id="carousel" style="left: -700px; transform: translateX(0px);" class="">
+                <div class="slide" style="width: 700px; background: rgba(0, 0, 0, 0)"></div>
+              </div>
+              <i class="mdi mdi-chevron-left" id="prev"></i>
+              <i class="mdi mdi-chevron-right" id="next"></i>
+            </div>
+          </div>
+          <div class="info-box">
+            <div class="title"></div>
+            <div class="tag"></div>
+            <div class="detail"></div>
+            <a href="#" target="_blank"><div class="button visible">
+                <i class="mdi mdi-open-in-new"></i>VIEW SITE
+              </div></a>
+          </div>
+          <i class="close mdi mdi-close"></i>
+        </div>
+      </div>
+    -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h5 class="modal-title title" id="staticBackdropLabel"></h5>
+                    <p class="detail"></p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
     <!-- Header -->
     <header>
         <nav>
@@ -48,6 +101,7 @@
         </nav>
     </header>
 
+    <!-- Content Title -->
     <div class="container mt-5">
         <div class="row ">
             <div class="col-12">
@@ -56,14 +110,17 @@
         </div>
     </div>
 
-    <div class="container mt-3">
+    <!-- Content -->
+    <div id="gallery" class="container mt-3">
         <div class="row">
-            <div class="card col-4 no-gutters" style="border-radius: none !important;">
+            <div id="mentor" class="card col-4 no-gutters" style="border-radius: none !important;">
                 <img src="./assets/images/mentor.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <!--<h5 class="card-title">Card title</h5>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-               --> </div>
+                    <!--<h5 class="card-title">Card title</h5>-->
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">Go
+                        somewhere</a>
+
+                </div>
             </div>
             <div class="card col-4 no-gutters"></div>
             <div class="card col-4 no-gutters"></div>
